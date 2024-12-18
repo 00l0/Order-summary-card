@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #e1e8fd;
+  position: relative;
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+.bg-desktop {
+  position: absolute;
+  z-index: -9999;
+}
+
+.bg-mobile{
+    display: none;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  background: white;
+  width: 350px;
+  height: 500px;
+  border-radius: 20px;
+}
+
+.container .img img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  margin-bottom: 20px;
+}
+
+.title {
+  text-align: center;
+}
+
+.title h1 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #161a2d;
+}
+
+.title p {
+  font-size: 13px;
+  color: #161a2dc0;
+  margin-bottom: 20px;
+}
+
+.plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f8f9fe;
+  width: fit-content;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.plan-img {
+  margin-right: 10px;
+}
+
+.plan-img img {
+  width: 32px;
+}
+
+.plan-title {
+  display: flex;
+  color: #161a2d;
+}
+
+.plan-title h2 {
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+
+.plan-title p {
+  font-size: 13px;
+  color: #161a2dc0;
+}
+
+.plan-button button{
+    background: transparent;
+    border: none;
+    font-size: 12px;
+    text-transform: capitalize;
+    color: #786ee8;
+    font-weight: bold;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.plan-button button:hover{
+    color: #9f84ff;
+}
+
+
+.payment{
+    height: 70px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.payment a{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: bold;
+
+}
+
+.payment .payment-btn{
+    background: #746ce9;
+    border: none;
+    color: white;
+    height: 190px;
+    width: 100%;
+    font-size: 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: .3s;
+}
+
+.payment-btn:hover{
+    box-shadow: 0px 10px 10px #746ce945;
+}
+
+.cancel-btn {
+    color: #161a2d;
+}
+
+@media (max-width:700px){
+    .bg-desktop{
+        display: none;
+    }
+
+    .bg-mobile {
+        display: block;
+        position: absolute;
+        z-index: -9999;
+      }
+}
